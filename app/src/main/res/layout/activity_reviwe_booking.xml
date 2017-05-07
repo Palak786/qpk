@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qpk.ReviweBooking">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/txtvw_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="  Destination"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtvw_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtvw_destination"
+            android:layout_marginTop="24dp"
+            android:layout_toStartOf="@+id/txtvw_from"
+            android:text="  Time"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtvw_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtvw_time"
+            android:layout_alignBottom="@+id/txtvw_time"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="135dp"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@+id/txtvw_selectedslot"
+            android:text="From"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtvw_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtvw_destination"
+            android:layout_marginBottom="420dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/txt_from"
+            android:text="To"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtvw_from"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="352dp"
+            android:layout_toEndOf="@+id/txtvw_time"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginStart="22dp" />
+
+        <TextView
+            android:id="@+id/txt_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtvw_to"
+            android:layout_alignStart="@+id/txtvw_to"
+            android:layout_alignTop="@+id/txt_from"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/txtvw_selectedslot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="286dp"
+            android:text="  Selected Slot"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtvw_vehicalno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtvw_selectedslot"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_selectedslot"
+            android:layout_marginBottom="196dp"
+            android:layout_marginTop="36dp"
+            android:text="  Vehicle No."
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_selectedslot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtvw_selectedslot"
+            android:layout_alignBottom="@+id/txtvw_selectedslot"
+            android:layout_alignEnd="@+id/txtvw_to"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/editText6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt_selectedslot"
+            android:layout_alignTop="@+id/txtvw_vehicalno"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/txtvw_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtvw_vehicalno"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText6"
+            android:layout_marginBottom="118dp"
+            android:layout_marginTop="38dp"
+            android:text="  Amount"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText6"
+            android:layout_alignTop="@+id/txtvw_amount"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/b_makepayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_amount"
+            android:layout_marginBottom="88dp"
+            android:layout_marginTop="40dp"
+            android:text="Make Payment"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_alignEnd="@+id/txt_amount"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/editText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtvw_to"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:layout_alignEnd="@+id/txtvw_to"
+            android:layout_alignStart="@+id/txt_from" />
+    </RelativeLayout>
+</RelativeLayout>

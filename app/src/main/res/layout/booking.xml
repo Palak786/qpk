@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qpk.Booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-12dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <SearchView
+            android:id="@+id/srch_dst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:backgroundTintMode="src_over"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_tm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/srch_dst"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="18dp"
+            android:paddingTop="5dp"
+            app:srcCompat="@drawable/ic_schedule_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/txt_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignStart="@+id/txt_amtno"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="11dp"
+            android:paddingTop="5dp"
+            android:text="Amount"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/txt_amtno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/txt_vhclno"
+            android:layout_below="@+id/txt_amt"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="number" />
+
+
+
+        <Button
+            android:id="@+id/b_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="95dp"
+            android:paddingTop="15dp"
+            android:text="BOOK"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txt_vhclno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_amt"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/img_tm"
+            android:layout_marginBottom="35dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/hint_vhclno"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/txt_cpn"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/b_book"
+            android:layout_alignEnd="@+id/txt_vhclno"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_amtno"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/hint_cpn"
+            android:inputType="textPersonName"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/b_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="38dp"
+            android:layout_toEndOf="@+id/txt_amt"
+            android:onClick="showTimePickerDialog"
+            android:text="From"
+            android:layout_above="@+id/time_textview1" />
+
+        <Button
+            android:id="@+id/b_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/b_from"
+            android:layout_alignEnd="@+id/txt_vhclno"
+            android:layout_alignTop="@+id/b_from"
+            android:layout_marginEnd="23dp"
+            android:text="To" />
+
+        <TextView
+            android:id="@+id/time_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_vhclno"
+            android:layout_alignEnd="@+id/b_from"
+            android:layout_alignStart="@+id/b_from"
+            android:layout_marginBottom="23dp"
+            android:text="      " />
+
+        <TextView
+            android:id="@+id/time_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/b_to"
+            android:layout_alignStart="@+id/b_to"
+            android:layout_alignTop="@+id/time_textview1"
+            android:text="     " />
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

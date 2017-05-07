@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qpk.ReceiptActivity">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="462dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtvw_receipt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="                                          RECEIPT" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtvw_bookid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="201dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="54dp"
+            android:text="Booking ID" />
+
+        <TextView
+            android:id="@+id/txtvvw_bookingid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/txtvw_bookid"
+            android:layout_alignTop="@+id/txtvw_bookid"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="171dp" />
+
+        <TextView
+            android:id="@+id/txtvw_dest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtvw_bookid"
+            android:layout_alignStart="@+id/txtvw_bookid"
+            android:layout_below="@+id/txtvw_bookid"
+            android:layout_marginTop="27dp"
+            android:text="Destination" />
+
+        <TextView
+            android:id="@+id/txtvw_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtvvw_bookingid"
+            android:layout_alignStart="@+id/txtvvw_bookingid"
+            android:layout_alignTop="@+id/txtvw_dest" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtvw_from1"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtvw_dest"
+            android:layout_marginEnd="74dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="26dp"
+            android:text="Time" />
+
+        <TextView
+            android:id="@+id/txtvw_from1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtvw_dest"
+            android:layout_alignStart="@+id/txtvw_dest"
+            android:layout_alignTop="@+id/textView14"
+            android:layout_marginEnd="19dp"
+            android:layout_marginStart="54dp"
+            android:text="From" />
+
+        <TextView
+            android:id="@+id/txtvw_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtvw_from1"
+            android:layout_alignStart="@+id/txtvw_from1"
+            android:layout_alignTop="@+id/txtvw_from1"
+            android:layout_marginStart="70dp"
+            android:layout_toEndOf="@+id/txtvw_from1"
+            android:text="                    " />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtvw_from"
+            android:layout_alignEnd="@+id/txtvw_destination"
+            android:layout_alignTop="@+id/txtvw_from"
+            android:layout_marginEnd="82dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/txtvw_from"
+            android:text="To" />
+
+        <TextView
+            android:id="@+id/txtvw_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_alignEnd="@+id/txtvw_destination"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_alignTop="@+id/textView12"
+            android:layout_marginStart="54dp"
+            android:text="               " />
+
+        <TextView
+            android:id="@+id/txtvw_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtvw_dest"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txtvw_dest"
+            android:layout_below="@+id/textView14"
+            android:layout_marginBottom="288dp"
+            android:layout_marginTop="24dp"
+            android:layout_toStartOf="@+id/txtvw_destination"
+            android:text="Transaction ID" />
+
+        <TextView
+            android:id="@+id/txtvw_transactionid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtvw_transaction"
+            android:layout_alignEnd="@+id/txtvw_to"
+            android:layout_alignStart="@+id/txtvw_destination"
+            android:text="                  " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/txtvw_transactionid"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txtvw_from1"
+            android:layout_below="@+id/txtvw_transactionid"
+            android:layout_marginBottom="90dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="47dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/navigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="navigate"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

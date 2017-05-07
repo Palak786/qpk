@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "357966012704",
+    "firebase_url": "https://quickpark-80310.firebaseio.com",
+    "project_id": "quickpark-80310",
+    "storage_bucket": "quickpark-80310.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357966012704:android:116ed6f67cb7fa68",
+        "android_client_info": {
+          "package_name": "com.qpk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357966012704-hospkhmdck4pogqobb8mvhk7qf6qrs98.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsQhpuzFV_Wgj9NJetHG50vM64cA5bxKE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
